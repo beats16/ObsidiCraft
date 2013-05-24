@@ -1,0 +1,19 @@
+[
+{
+  "modid": "LMM",
+  "name": "Let's Mod Mod",
+  "description": "Learn how to mod",
+  "version": "0.0.1",
+  "authorList": [
+    "pahimar",
+    "x3n0ph0b3",
+    "matthew"
+  ],
+  "credits": "By pahimar, based on how to mod",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
