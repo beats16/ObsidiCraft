@@ -17,6 +17,7 @@ public class ModItems
     public static Item obsidianShovel;
     public static Item obsidianCutter;
     public static Item blackDiamond;
+    public static Item obsidianIngot;
     public static EnumToolMaterial obsidian;
     
     public static void init(){
@@ -32,6 +33,7 @@ public class ModItems
         obsidianShovel = new obsidianShovel(ItemIDs.obsidianShoveldefault, obsidian);
         obsidianCutter = new obsidianCutter(ItemIDs.obsidianCutterdefault);
         blackDiamond = new blackDiamond(ItemIDs.blackDiamonddefault);
+        obsidianIngot = new obsidianIngot(ItemIDs.obsidianIngotDefault);
         
         
         obsidianCutter.setContainerItem(obsidianCutter);

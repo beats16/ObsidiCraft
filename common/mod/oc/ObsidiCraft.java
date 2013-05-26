@@ -7,7 +7,9 @@ import mod.oc.creativetab.CreativeTabsLMM;
 import mod.oc.helper.PacketHandler;
 import mod.oc.item.ModItems;
 import mod.oc.lib.ReferenceVariables;
+import mod.oc.worldGen.ModWorldGenerator;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -17,6 +19,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
  * Lets-Mod-Mod
@@ -39,18 +42,22 @@ public class ObsidiCraft {
     
     public static CreativeTabs tabsOC = new CreativeTabsLMM(CreativeTabs.getNextID(), "ObsidiCraft");
     
+    
     @PreInit
     public void preInit(FMLPreInitializationEvent event) 
     {
         ModItems.init();
         
-        //ModBlocks.init();
+        ModBlocks.init();
+        
     }
     
     @Init
     public void load(FMLInitializationEvent event) 
-    {
-        
+    { 
+        MinecraftForge.ORE_GEN_BUS.register(new ModWorldGenerator());
+        //GameRegistry.registerWorldGenerator(new ModWorldGenerator());
+       
     }
 
     @PostInit

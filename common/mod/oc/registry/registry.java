@@ -27,6 +27,7 @@ public class registry
         GameRegistry.registerItem(ModItems.obsidianShovel, "shovelObsidian");
         GameRegistry.registerItem(ModItems.obsidianCutter, "obsidianCutter");
         GameRegistry.registerItem(ModItems.blackDiamond, "blackDiamond");
+        GameRegistry.registerItem(ModItems.obsidianIngot, "obsidianIngot");
         
         //Recipies
         GameRegistry.addRecipe(new ItemStack(ModItems.obsidianSword), new Object[]{" 1 "," 1 "," 2 ", Character.valueOf('1'), ModItems.obsidianShard, Character.valueOf('2'), Item.stick});
@@ -37,6 +38,7 @@ public class registry
         GameRegistry.addRecipe(new ItemStack(ModItems.obsidianShovel), new Object[]{" 1 "," 2 "," 2 ", Character.valueOf('1'), ModItems.obsidianShard, Character.valueOf('2'), Item.stick});
         GameRegistry.addRecipe(new ItemStack(ModItems.obsidianCutter,1,100), new Object[]{" 1 ", " 3 ", " 2 ", Character.valueOf('1'), Item.ingotIron, Character.valueOf('2'), Item.stick, Character.valueOf('3'), Item.ingotGold});
         GameRegistry.addRecipe(new ItemStack(ModItems.blackDiamond), new Object[]{"121", "232", "121", Character.valueOf('1'), ModItems.obsidianShard, Character.valueOf('2'), Item.ingotGold, Character.valueOf('3'), Item.diamond});
+        GameRegistry.addSmelting(ModItems.obsidianShard.itemID, new ItemStack(ModItems.obsidianIngot), 0.1F);
         
         //Language Registry 
         LanguageRegistry.addName(ModItems.obsidianSword, "Obsidian Sword");
@@ -47,7 +49,7 @@ public class registry
         LanguageRegistry.addName(ModItems.obsidianShovel, "Obsidian Shovel");
         LanguageRegistry.addName(ModItems.obsidianCutter, "Obsidian Cutter");
         LanguageRegistry.addName(ModItems.blackDiamond, "Black Diamond");
-        
+        LanguageRegistry.addName(ModItems.obsidianIngot, "Obsidian Ingot");
     }
     
     
