@@ -15,7 +15,7 @@ public class obsidianHoe extends ItemHoe
     {
         super(par1, par2);
         this.setUnlocalizedName("hoeObsidian");
-        this.setCreativeTab(ObsidiCraft.tabsLMM);
+        this.setCreativeTab(ObsidiCraft.tabsOC);
         maxStackSize = 1;
     }
 

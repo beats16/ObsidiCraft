@@ -29,7 +29,7 @@ import cpw.mods.fml.common.network.NetworkMod;
  */
 
 @Mod(modid = ReferenceVariables.MOD_ID, name = ReferenceVariables.MOD_NAME, version = ReferenceVariables.VERSION)
-@NetworkMod(clientSideRequired = true, serverSideRequired = false, channels = "LetsMod", packetHandler = PacketHandler.class)
+@NetworkMod(clientSideRequired = true, serverSideRequired = false, channels = "ObsidiCraft", packetHandler = PacketHandler.class)
 public class ObsidiCraft {
     
     @Instance(ReferenceVariables.MOD_ID)
@@ -37,14 +37,14 @@ public class ObsidiCraft {
     public static ModBlocks instance2 = new ModBlocks();  
     public static GuiHandler guiHandler = new GuiHandler();
     
-    public static CreativeTabs tabsLMM = new CreativeTabsLMM(CreativeTabs.getNextID(), "Let's Mod");
+    public static CreativeTabs tabsOC = new CreativeTabsLMM(CreativeTabs.getNextID(), "ObsidiCraft");
     
     @PreInit
     public void preInit(FMLPreInitializationEvent event) 
     {
         ModItems.init();
         
-        ModBlocks.init();
+        //ModBlocks.init();
     }
     
     @Init

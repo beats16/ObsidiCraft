@@ -17,9 +17,9 @@ public class ReferenceVariables
     public static final boolean DEBUG_MODE = false;
 
     /* General Mod related constants */
-    public static final String MOD_ID = "lmm";
-    public static final String MOD_NAME = "Let's Mod Mod";
-    public static final String VERSION = "@VERSION@";
+    public static final String MOD_ID = "OC";
+    public static final String MOD_NAME = "ObsidiCraft";
+    public static final String VERSION = "0.1.1";
     public static final String CHANNEL_NAME = MOD_ID;
     public static final int SECOND_IN_TICKS = 20;
     public static final int SHIFTED_ID_RANGE_CORRECTION = 256;

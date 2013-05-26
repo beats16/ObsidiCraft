@@ -14,7 +14,7 @@ public class obsidianShard extends ItemLMM
     {
         super(par1);
         this.setUnlocalizedName("shardObsidian");
-        this.setCreativeTab(ObsidiCraft.tabsLMM);
+        this.setCreativeTab(ObsidiCraft.tabsOC);
         maxStackSize = 64;
         // TODO Auto-generated constructor stub
     }

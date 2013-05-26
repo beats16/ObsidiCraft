@@ -13,7 +13,7 @@ public class obsidianAxe extends ItemAxe
     {
         super(par1, par2);
         this.setUnlocalizedName("hatchetObsidian");
-        this.setCreativeTab(ObsidiCraft.tabsLMM);
+        this.setCreativeTab(ObsidiCraft.tabsOC);
         maxStackSize = 1;
     }
     

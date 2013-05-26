@@ -15,7 +15,7 @@ public class obsidianShovel extends ItemSpade
     {
         super(par1, par2EnumToolMaterial);
         this.setUnlocalizedName("pickaxeObsidian");
-        this.setCreativeTab(ObsidiCraft.tabsLMM);
+        this.setCreativeTab(ObsidiCraft.tabsOC);
         maxStackSize = 1;
     }
     

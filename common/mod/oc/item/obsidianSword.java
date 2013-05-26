@@ -17,7 +17,7 @@ public class obsidianSword extends ItemSword
         super(par1, par2);
         this.setUnlocalizedName("swordObsidian");
         this.setMaxDamage(1100);
-        this.setCreativeTab(ObsidiCraft.tabsLMM);
+        this.setCreativeTab(ObsidiCraft.tabsOC);
         maxStackSize = 1;
     }
       

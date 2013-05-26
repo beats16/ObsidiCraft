@@ -15,7 +15,7 @@ public class obsidianCutter extends ItemLMM
         super(par1);
         this.setUnlocalizedName("obsidianCutter");
         this.setMaxDamage(100);
-        this.setCreativeTab(ObsidiCraft.tabsLMM);
+        this.setCreativeTab(ObsidiCraft.tabsOC);
         maxStackSize = 1;
     }
 

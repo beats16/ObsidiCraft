@@ -14,7 +14,7 @@ public class blackDiamond extends Item
     {
         super(par1);
         this.setUnlocalizedName("blackDiamond");
-        this.setCreativeTab(ObsidiCraft.tabsLMM);
+        this.setCreativeTab(ObsidiCraft.tabsOC);
         maxStackSize = 64;
     }
 

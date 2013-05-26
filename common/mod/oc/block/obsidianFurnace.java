@@ -47,7 +47,7 @@ public class obsidianFurnace extends BlockContainer
         super(par1, Material.rock);
         this.isActive = par2;
         this.setUnlocalizedName("ObsidianFurnace");
-        this.setCreativeTab(ObsidiCraft.tabsLMM);
+        this.setCreativeTab(ObsidiCraft.tabsOC);
     }
 
     /**
