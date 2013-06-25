@@ -1,4 +1,4 @@
-package mod.oc.item;
+package mod.oc.item.tools;
 
 import mod.oc.ObsidiCraft;
 import mod.oc.lib.ReferenceVariables;
@@ -12,13 +12,14 @@ public class obsidianAxe extends ItemAxe
     public obsidianAxe(int par1, EnumToolMaterial par2)
     {
         super(par1, par2);
-        this.setUnlocalizedName("hatchetObsidian");
         this.setCreativeTab(ObsidiCraft.tabsOC);
         maxStackSize = 1;
     }
     
     public void registerIcons(IconRegister iconRegister) 
     {
-     itemIcon = iconRegister.registerIcon(ReferenceVariables.MOD_ID.toLowerCase() + ":hatchetObsidian");
+        String name = this.getUnlocalizedName();
+        String name2 = name.substring(5);
+        itemIcon = iconRegister.registerIcon(ReferenceVariables.MOD_ID.toLowerCase() + ":" + name2);
     }
 }

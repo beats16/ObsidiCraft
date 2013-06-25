@@ -1,6 +1,7 @@
-package mod.oc.item;
+package mod.oc.item.tools;
 
 import mod.oc.ObsidiCraft;
+import mod.oc.item.ItemLMM;
 import mod.oc.lib.ReferenceVariables;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.ItemStack;

@@ -1,29 +1,30 @@
 package mod.oc.block;
 
 
+
 import mod.oc.ObsidiCraft;
 import mod.oc.lib.BlockIDs;
+import mod.oc.lib.ItemIDs;
 import mod.oc.registry.registryBlock;
 import net.minecraft.block.Block;
-import cpw.mods.fml.common.network.NetworkRegistry;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModBlocks
 {
-    public static Block obsidianFurnaceIdle;
-    public static Block obsidianFurnaceBurning;
     public static Block obsidianInfusedGravel;
-    
+    public static Block obsidianStoneBrick;
+    public static Block obsidianStone;
+    public static Block obsidianBrickCarved;
+    public static Block obsidianGlass;
+    public static Block blackDiamondBlock;
     
     public static void init()
     {
-        //obsidianFurnaceIdle = new obsidianFurnace(ItemIDs.obsidianFurnaceIdleDefault, false);
-        //obsidianFurnaceBurning = new obsidianFurnace(ItemIDs.obsidianFurnaceBurningDefault, true);
         obsidianInfusedGravel = new obsidianGravel(BlockIDs.obsdianGravel);
+        obsidianStoneBrick = new ModBlock(BlockIDs.obsidianStoneBrick).setHardness(4.0f).setUnlocalizedName("obsidianStoneBrick");
+        obsidianStone = new ModBlock(BlockIDs.obsidianStone).setHardness(4.0f).setUnlocalizedName("obsidianStone");
+        obsidianBrickCarved = new ModBlock(BlockIDs.obsidianBrickCarved).setHardness(4.0f).setUnlocalizedName("obsidianBrickCarved");
+        obsidianGlass = new ModGlass(BlockIDs.obsidianGlass).setResistance(2000.0f).setHardness(10.0f).setUnlocalizedName("obsidianGlass");
+        blackDiamondBlock = new ModBlock(BlockIDs.blackDiamondBlock).setHardness(10.0f).setUnlocalizedName("blockBlackDiamond");
         
-        //GameRegistry.registerTileEntity(TileEntityObsidianFurnace.class, "TileEntityObsidianFurnace");
-        //NetworkRegistry.instance().registerGuiHandler(ObsidiCraft.instance, ObsidiCraft.guiHandler);
-        
-        registryBlock.init();
     }
 }

@@ -21,7 +21,7 @@ public class obsidianGravel extends BlockGravel
         super(par1);
         this.setUnlocalizedName("obsidianInfusedGravel");
         this.setCreativeTab(ObsidiCraft.tabsOC);
-        this.setHardness(0.9F);
+        this.setHardness(0.5F);
     }
     
     @Override

@@ -1,30 +1,36 @@
 package mod.oc;
 
 
-import mod.oc.block.GuiHandler;
 import mod.oc.block.ModBlocks;
+import mod.oc.core.proxy.ServerProxy;
 import mod.oc.creativetab.CreativeTabsLMM;
 import mod.oc.helper.PacketHandler;
 import mod.oc.item.ModItems;
+import mod.oc.item.armor.ModArmor;
 import mod.oc.lib.ReferenceVariables;
+import mod.oc.registry.registryBlock;
 import mod.oc.worldGen.ModWorldGenerator;
+import mod.oc.worldGen.OBaseWorldGenerator;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.PostInit;
 import cpw.mods.fml.common.Mod.PreInit;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
- * Lets-Mod-Mod
+ * ObsidiCraft
  * 
- * Let's Mod Mod
+ * ObsidiCraft
  * 
  * @author matthew
  * @license Lesser GNU Public License v3 (http://www.gnu.org/licenses/lgpl.html)
@@ -35,10 +41,13 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @NetworkMod(clientSideRequired = true, serverSideRequired = false, channels = "ObsidiCraft", packetHandler = PacketHandler.class)
 public class ObsidiCraft {
     
+
+    @SidedProxy(clientSide = "mod.oc.core.proxy.ClientProxy", serverSide = "mod.oc.core.proxy.ServerProxy")
+    public static ServerProxy proxy;
+    
     @Instance(ReferenceVariables.MOD_ID)
     public static ObsidiCraft instance; 
-    public static ModBlocks instance2 = new ModBlocks();  
-    public static GuiHandler guiHandler = new GuiHandler();
+    public static ModBlocks instance2 = new ModBlocks();
     
     public static CreativeTabs tabsOC = new CreativeTabsLMM(CreativeTabs.getNextID(), "ObsidiCraft");
     
@@ -46,18 +55,20 @@ public class ObsidiCraft {
     @PreInit
     public void preInit(FMLPreInitializationEvent event) 
     {
-        ModItems.init();
-        
         ModBlocks.init();
         
+        ModItems.init();
+        
+        registryBlock.init();
+        
+        GameRegistry.registerWorldGenerator(new OBaseWorldGenerator());
+
     }
     
     @Init
     public void load(FMLInitializationEvent event) 
-    { 
-        MinecraftForge.ORE_GEN_BUS.register(new ModWorldGenerator());
-        //GameRegistry.registerWorldGenerator(new ModWorldGenerator());
-       
+    {
+        
     }
 
     @PostInit

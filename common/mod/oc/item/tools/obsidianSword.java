@@ -1,4 +1,4 @@
-package mod.oc.item;
+package mod.oc.item.tools;
 
 
 import mod.oc.ObsidiCraft;
@@ -15,7 +15,6 @@ public class obsidianSword extends ItemSword
     public obsidianSword(int par1, EnumToolMaterial par2)
     {
         super(par1, par2);
-        this.setUnlocalizedName("swordObsidian");
         this.setMaxDamage(1100);
         this.setCreativeTab(ObsidiCraft.tabsOC);
         maxStackSize = 1;
@@ -23,8 +22,10 @@ public class obsidianSword extends ItemSword
       
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
-
-        itemIcon = iconRegister.registerIcon(ReferenceVariables.MOD_ID.toLowerCase() + ":swordObsidian");
+    public void registerIcons(IconRegister iconRegister) 
+    {
+        String name = this.getUnlocalizedName();
+        String name2 = name.substring(5);
+        itemIcon = iconRegister.registerIcon(ReferenceVariables.MOD_ID.toLowerCase() + ":" + name2);
     }
 }

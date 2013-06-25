@@ -1,4 +1,4 @@
-package mod.oc.item;
+package mod.oc.item.tools;
 
 import mod.oc.ObsidiCraft;
 import mod.oc.lib.ReferenceVariables;
@@ -14,16 +14,17 @@ public class obsidianShovel extends ItemSpade
     public obsidianShovel(int par1, EnumToolMaterial par2EnumToolMaterial)
     {
         super(par1, par2EnumToolMaterial);
-        this.setUnlocalizedName("pickaxeObsidian");
         this.setCreativeTab(ObsidiCraft.tabsOC);
         maxStackSize = 1;
     }
     
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
-
-        itemIcon = iconRegister.registerIcon(ReferenceVariables.MOD_ID.toLowerCase() + ":shovelObsidian");
+    public void registerIcons(IconRegister iconRegister) 
+    {
+        String name = this.getUnlocalizedName();
+        String name2 = name.substring(5);
+        itemIcon = iconRegister.registerIcon(ReferenceVariables.MOD_ID.toLowerCase() + ":" + name2);
     }
 }
 

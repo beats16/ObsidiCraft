@@ -11,13 +11,16 @@ public class registryBlock
 {
     public static void init()
     {
-        //Block Registry 
-        //GameRegistry.registerBlock(ModBlocks.obsidianFurnaceIdle, "ObsidianFurnace");
-        //GameRegistry.registerBlock(ModBlocks.obsidianFurnaceBurning, "ObsidianFurnace2");
+
         GameRegistry.registerBlock(ModBlocks.obsidianInfusedGravel, "ObsidianInfusedGravel");
+        GameRegistry.registerBlock(ModBlocks.blackDiamondBlock, "blackDiamondBlock");
+        GameRegistry.registerBlock(ModBlocks.obsidianBrickCarved, "ObsidianBrickCarved");
+        GameRegistry.registerBlock(ModBlocks.obsidianGlass, "ObsidianGlass");
+        GameRegistry.registerBlock(ModBlocks.obsidianStone, "ObsidianStone");
+        GameRegistry.registerBlock(ModBlocks.obsidianStoneBrick, "ObsidianStoneBrick");
+        
         
         //crafting recipies
-        //GameRegistry.addRecipe(new ItemStack(ModBlocks.obsidianFurnaceIdle), new Object[]{" 1 ","121"," 1 ", Character.valueOf('1'), ModItems.obsidianShard, Character.valueOf('2'), Block.furnaceIdle});
         GameRegistry.addRecipe(new ItemStack(Block.obsidian, 2), new Object[]{"11","11", Character.valueOf('1'), ModBlocks.obsidianInfusedGravel});
         
         
@@ -26,8 +29,11 @@ public class registryBlock
 
         
         //language registry
-        //LanguageRegistry.addName(ModBlocks.obsidianFurnaceIdle, "Obsidian Furnace");
-        //LanguageRegistry.addName(ModBlocks.obsidianFurnaceBurning, "Obsidian Furnace");
         LanguageRegistry.addName(ModBlocks.obsidianInfusedGravel, "Obsidian Infused Gravel");
+        LanguageRegistry.addName(ModBlocks.blackDiamondBlock, "Block Of Black Diamond");
+        LanguageRegistry.addName(ModBlocks.obsidianBrickCarved, "Obsidian Brick");
+        LanguageRegistry.addName(ModBlocks.obsidianGlass, "Obsidian Glass");
+        LanguageRegistry.addName(ModBlocks.obsidianStone, "Obsidian Stone");
+        LanguageRegistry.addName(ModBlocks.obsidianStoneBrick, "Obsidian Stone Brick");
     }
 }
