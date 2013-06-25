@@ -27,9 +27,11 @@ public class ItemLMM extends Item
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
-
-        itemIcon = iconRegister.registerIcon(ReferenceVariables.MOD_ID.toLowerCase() + ":" + this.getUnlocalizedName());
+    public void registerIcons(IconRegister iconRegister) 
+    {
+        String name = this.getUnlocalizedName();
+        String name2 = name.substring(5);
+        itemIcon = iconRegister.registerIcon(ReferenceVariables.MOD_ID.toLowerCase() + ":" + name2);
     }
 
 }

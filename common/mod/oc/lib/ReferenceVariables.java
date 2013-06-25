@@ -19,7 +19,7 @@ public class ReferenceVariables
     /* General Mod related constants */
     public static final String MOD_ID = "OC";
     public static final String MOD_NAME = "ObsidiCraft";
-    public static final String VERSION = "0.1.2";
+    public static final String VERSION = "0.1.3";
     public static final String CHANNEL_NAME = MOD_ID;
     public static final int SECOND_IN_TICKS = 20;
     public static final int SHIFTED_ID_RANGE_CORRECTION = 256;

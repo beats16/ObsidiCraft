@@ -2,8 +2,8 @@
 {
   "modid": "OC",
   "name": "ObsidiCraft",
-  "description": "More things to do with obsidian",
-  "version": "0.0.1",
+  "description": "Turning useless Obsidian into something fun",
+  "version": "0.1.3",
   "authorList": [
     "beats16"
   ],

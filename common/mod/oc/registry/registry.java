@@ -43,6 +43,8 @@ public class registry
         GameRegistry.registerItem(ModItems.blackDiamondAxe, "axeBlackDiamond");
         GameRegistry.registerItem(ModItems.blackDiamondHoe, "hoeBlackDiamond");
         GameRegistry.registerItem(ModItems.blackDiamondShovel, "shovelBlackDiamond");
+        GameRegistry.registerItem(ModItems.obsidianBow, "obsidianBow");
+        GameRegistry.registerItem(ModItems.obsidianArrow, "obsidianArrow");
         
         //Recipies
         GameRegistry.addRecipe(new ItemStack(ModItems.obsidianSword), new Object[]{" 1 "," 1 "," 2 ", Character.valueOf('1'), ModItems.obsidianShard, Character.valueOf('2'), Item.stick});
@@ -66,15 +68,11 @@ public class registry
         GameRegistry.addRecipe(new ItemStack(ModItems.blackDiamondAxe), new Object[]{"11 ","12 "," 2 ", Character.valueOf('1'), ModItems.blackDiamond, Character.valueOf('2'), Item.ingotGold});
         GameRegistry.addRecipe(new ItemStack(ModItems.blackDiamondHoe), new Object[]{"11 "," 2 "," 2 ", Character.valueOf('1'), ModItems.blackDiamond, Character.valueOf('2'), Item.ingotGold});
         GameRegistry.addRecipe(new ItemStack(ModItems.blackDiamondShovel), new Object[]{" 1 "," 2 "," 2 ", Character.valueOf('1'), ModItems.blackDiamond, Character.valueOf('2'), Item.ingotGold});
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.obsidianGlass, 8, 0), new Object[]{"111","121","111", Character.valueOf('1'), Block.glass, Character.valueOf('2'), ModItems.obsidianShard});
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.blackDiamondBlock,1, 0), new Object[]{"111","111","111", Character.valueOf('1'), ModItems.blackDiamond});
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.obsidianStoneBrick, 4 , 0), new Object[]{"11","11", Character.valueOf('1'), ModBlocks.obsidianStone});
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.blackDiamond, 9,0), new Object[] {ModBlocks.blackDiamondBlock});
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.blackDiamond,9), new Object[] {ModBlocks.blackDiamondBlock});
         
         
         //smelting recipies
         GameRegistry.addSmelting(ModItems.obsidianShard.itemID, new ItemStack(ModItems.obsidianIngot), 0.1F);
-        GameRegistry.addSmelting(Block.obsidian.blockID, new ItemStack(ModBlocks.obsidianStone), 0.5f);
         
         //Language Registry 
         LanguageRegistry.addName(ModItems.obsidianSword, "Obsidian Sword");
@@ -91,6 +89,8 @@ public class registry
         LanguageRegistry.addName(ModItems.blackDiamondAxe, "Black Diamond Axe");
         LanguageRegistry.addName(ModItems.blackDiamondHoe, "Black Diamond Hoe");
         LanguageRegistry.addName(ModItems.blackDiamondShovel, "Black Diamond Shovel");
+        LanguageRegistry.addName(ModItems.obsidianArrow, "Obsidian Arrow");
+        LanguageRegistry.addName(ModItems.obsidianBow, "Obsidian Bow");
         
         LanguageRegistry.addName(ModArmor.obsidianBoots, "Obsidian Boots");
         LanguageRegistry.addName(ModArmor.obsidianHelmet, "Obsidian Helmet");

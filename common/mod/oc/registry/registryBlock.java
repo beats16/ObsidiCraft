@@ -18,15 +18,18 @@ public class registryBlock
         GameRegistry.registerBlock(ModBlocks.obsidianGlass, "ObsidianGlass");
         GameRegistry.registerBlock(ModBlocks.obsidianStone, "ObsidianStone");
         GameRegistry.registerBlock(ModBlocks.obsidianStoneBrick, "ObsidianStoneBrick");
-        
+        //GameRegistry.registerBlock(ModBlocks.obsidianPane, "ObsidianPane");
         
         //crafting recipies
         GameRegistry.addRecipe(new ItemStack(Block.obsidian, 2), new Object[]{"11","11", Character.valueOf('1'), ModBlocks.obsidianInfusedGravel});
-        
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.obsidianGlass, 8), new Object[]{"111","121","111", Character.valueOf('1'), Block.glass, Character.valueOf('2'), ModItems.obsidianShard});
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.blackDiamondBlock,1), new Object[]{"111","111","111", Character.valueOf('1'), ModItems.blackDiamond});
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.obsidianStoneBrick, 4), new Object[]{"11","11", Character.valueOf('1'), ModBlocks.obsidianStone});
+        //GameRegistry.addRecipe(new ItemStack(ModBlocks.obsidianPane, 16), new Object[]{"111","111", Character.valueOf('1'), ModBlocks.obsidianGlass});
         
         //Smelting recipies
         GameRegistry.addSmelting(ModBlocks.obsidianInfusedGravel.blockID, new ItemStack(ModItems.obsidianShard), 0.1F);
-
+        GameRegistry.addSmelting(Block.obsidian.blockID, new ItemStack(ModBlocks.obsidianStone), 0.5f);
         
         //language registry
         LanguageRegistry.addName(ModBlocks.obsidianInfusedGravel, "Obsidian Infused Gravel");
@@ -35,5 +38,6 @@ public class registryBlock
         LanguageRegistry.addName(ModBlocks.obsidianGlass, "Obsidian Glass");
         LanguageRegistry.addName(ModBlocks.obsidianStone, "Obsidian Stone");
         LanguageRegistry.addName(ModBlocks.obsidianStoneBrick, "Obsidian Stone Brick");
+        //LanguageRegistry.addName(ModBlocks.obsidianPane, "Obsidian Glass Pane");
     }
 }

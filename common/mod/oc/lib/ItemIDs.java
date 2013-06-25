@@ -31,6 +31,8 @@ public class ItemIDs
      
     //default
     public static int obsidianSword;
+    public static int obsidianBowDefault = 3022;
+    public static int obsidianArrowDefault = 3023;
    
    
     

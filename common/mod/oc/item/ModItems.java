@@ -1,5 +1,6 @@
 package mod.oc.item;
 
+import mod.oc.ObsidiCraft;
 import mod.oc.core.proxy.ClientProxy;
 import mod.oc.core.proxy.ServerProxy;
 import mod.oc.item.armor.ItemObsidianArmor;
@@ -15,6 +16,7 @@ import mod.oc.registry.registry;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBow;
 import net.minecraftforge.common.EnumHelper;
 
 
@@ -35,6 +37,9 @@ public class ModItems
     public static Item blackDiamondAxe;
     public static Item blackDiamondHoe;
     public static Item blackDiamondShovel;
+    public static ModItemBow obsidianBow;
+    public static Item obsidianArrow;
+    
     public static EnumToolMaterial obsidianTool;
     public static EnumToolMaterial blackDiamondTool;
     
@@ -58,7 +63,8 @@ public class ModItems
         obsidianCutter = new obsidianCutter(ItemIDs.obsidianCutterdefault);
         blackDiamond = new blackDiamond(ItemIDs.blackDiamonddefault);
         obsidianIngot = new obsidianIngot(ItemIDs.obsidianIngotDefault);
-        
+        obsidianBow = (ModItemBow)(new ModItemBow(ItemIDs.obsidianBowDefault)).setUnlocalizedName("obsidianBow");
+        obsidianArrow = new ItemLMM(ItemIDs.obsidianArrowDefault).setCreativeTab(ObsidiCraft.tabsOC).setUnlocalizedName("obsidianTippedArrow");
         
         obsidianCutter.setContainerItem(obsidianCutter);
         

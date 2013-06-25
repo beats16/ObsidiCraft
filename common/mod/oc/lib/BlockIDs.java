@@ -11,6 +11,7 @@ public class BlockIDs
     public static int obsidianBrickCarved = 3055;
     public static int obsidianGlass = 3056;
     public static int blackDiamondBlock = 3057;
+    public static int obsidianPane = 3058;
     
     
     
