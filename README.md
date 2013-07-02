@@ -1,2 +1,2 @@
-LetsMod-Mod
+ObsidiCraft
 ===========
