@@ -51,7 +51,7 @@ public class ModItemBow extends Item
 
         boolean flag = par3EntityPlayer.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantment.infinity.effectId, par1ItemStack) > 0;
 
-        if (flag || par3EntityPlayer.inventory.hasItem(ModItems.obsidianArrow.itemID))
+        if (flag || par3EntityPlayer.inventory.hasItem(Item.arrow.itemID))
         {
             float f = (float)j / 20.0F;
             f = (f * f + f * 2.0F) / 3.0F;
@@ -101,7 +101,7 @@ public class ModItemBow extends Item
             }
             else
             {
-                par3EntityPlayer.inventory.consumeInventoryItem(ModItems.obsidianArrow.itemID);
+                par3EntityPlayer.inventory.consumeInventoryItem(Item.arrow.itemID);
             }
 
             if (!par2World.isRemote)
@@ -144,7 +144,7 @@ public class ModItemBow extends Item
             return event.result;
         }
 
-        if (par3EntityPlayer.capabilities.isCreativeMode || par3EntityPlayer.inventory.hasItem(ModItems.obsidianArrow.itemID))
+        if (par3EntityPlayer.capabilities.isCreativeMode || par3EntityPlayer.inventory.hasItem(Item.arrow.itemID))
         {
             par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
         }
@@ -159,7 +159,8 @@ public class ModItemBow extends Item
     {
         return 15;
     }
-
+    
+    @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister iconRegister)
     {
@@ -168,7 +169,7 @@ public class ModItemBow extends Item
 
         for (int i = 0; i < this.iconArray.length; ++i)
         {
-            this.iconArray[i] = iconRegister.registerIcon(bowPullIconNameArray[i]);
+            this.iconArray[i] = iconRegister.registerIcon(ReferenceVariables.MOD_ID.toLowerCase() + ":" + bowPullIconNameArray[i]);
         }
     }
 

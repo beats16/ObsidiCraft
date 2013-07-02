@@ -40,6 +40,6 @@ public class ModPane extends BlockPane
      */
     public Icon getSideTextureIndex()
     {
-        return this.theIcon;
+        return theIcon;
     }
 }

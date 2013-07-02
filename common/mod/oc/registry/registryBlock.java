@@ -18,7 +18,12 @@ public class registryBlock
         GameRegistry.registerBlock(ModBlocks.obsidianGlass, "ObsidianGlass");
         GameRegistry.registerBlock(ModBlocks.obsidianStone, "ObsidianStone");
         GameRegistry.registerBlock(ModBlocks.obsidianStoneBrick, "ObsidianStoneBrick");
-        //GameRegistry.registerBlock(ModBlocks.obsidianPane, "ObsidianPane");
+        GameRegistry.registerBlock(ModBlocks.obsidianLava, "ObsidianLava");
+        GameRegistry.registerBlock(ModBlocks.obsidianLavaStoneBrick, "ObsidianLavaStoneBrick");
+        GameRegistry.registerBlock(ModBlocks.obsidianLavaBrickCarved, "ObsidianLavaStoneBrickCarved");
+        GameRegistry.registerBlock(ModBlocks.blackDiamondOre, "BlackDiamondOre");
+        
+        GameRegistry.registerBlock(ModBlocks.obsidianPane, "ObsidianPane");
         
         //crafting recipies
         GameRegistry.addRecipe(new ItemStack(Block.obsidian, 2), new Object[]{"11","11", Character.valueOf('1'), ModBlocks.obsidianInfusedGravel});
@@ -38,6 +43,10 @@ public class registryBlock
         LanguageRegistry.addName(ModBlocks.obsidianGlass, "Obsidian Glass");
         LanguageRegistry.addName(ModBlocks.obsidianStone, "Obsidian Stone");
         LanguageRegistry.addName(ModBlocks.obsidianStoneBrick, "Obsidian Stone Brick");
-        //LanguageRegistry.addName(ModBlocks.obsidianPane, "Obsidian Glass Pane");
+        LanguageRegistry.addName(ModBlocks.obsidianLavaStoneBrick, "Obsidian Lava Stone Brick");
+        LanguageRegistry.addName(ModBlocks.obsidianLavaBrickCarved, "Obsidian Lava Brick Carved");
+        LanguageRegistry.addName(ModBlocks.blackDiamondOre, "Black Diamond Ore");
+        LanguageRegistry.addName(ModBlocks.obsidianLava, "Lava Infused Obsidian");
+        LanguageRegistry.addName(ModBlocks.obsidianPane, "Obsidian Glass Pane");
     }
 }

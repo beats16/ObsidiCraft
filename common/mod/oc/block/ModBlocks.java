@@ -17,6 +17,10 @@ public class ModBlocks
     public static Block obsidianGlass;
     public static Block blackDiamondBlock;
     public static Block obsidianPane;
+    public static Block obsidianLava;
+    public static Block obsidianLavaStoneBrick;
+    public static Block obsidianLavaBrickCarved;
+    public static Block blackDiamondOre;
     
     public static void init()
     {
@@ -27,5 +31,9 @@ public class ModBlocks
         obsidianGlass = new ModGlass(BlockIDs.obsidianGlass).setResistance(2000.0f).setHardness(10.0f).setUnlocalizedName("obsidianGlass");
         blackDiamondBlock = new ModBlock(BlockIDs.blackDiamondBlock).setHardness(10.0f).setUnlocalizedName("blockBlackDiamond");
         obsidianPane = (new ModPane(BlockIDs.obsidianPane, "obsidianGlass", "thinObsidianGlass_top", Material.glass, true)).setCreativeTab(ObsidiCraft.tabsOC).setHardness(0.3F).setUnlocalizedName("obsidianGlass");
+        obsidianLava = new ModBlock(BlockIDs.obsidianLava).setHardness(20.0f).setResistance(2000.0f).setUnlocalizedName("obsidianLava");
+        obsidianLavaStoneBrick = new ModBlock(BlockIDs.obsidianLavaStoneBrick).setHardness(4.0f).setResistance(2000.0f).setUnlocalizedName("obsidianLavaStoneBrick");
+        obsidianLavaBrickCarved = new ModBlock(BlockIDs.obsidianLavaBrickCarved).setHardness(4.0f).setResistance(2000.0f).setUnlocalizedName("obsidianLavaBrickCarved");
+        blackDiamondOre = new ModOre(BlockIDs.blackDiamondOre).setHardness(4.0f).setUnlocalizedName("blackDiamondOre");
     }
 }

@@ -44,7 +44,6 @@ public class registry
         GameRegistry.registerItem(ModItems.blackDiamondHoe, "hoeBlackDiamond");
         GameRegistry.registerItem(ModItems.blackDiamondShovel, "shovelBlackDiamond");
         GameRegistry.registerItem(ModItems.obsidianBow, "obsidianBow");
-        GameRegistry.registerItem(ModItems.obsidianArrow, "obsidianArrow");
         
         //Recipies
         GameRegistry.addRecipe(new ItemStack(ModItems.obsidianSword), new Object[]{" 1 "," 1 "," 2 ", Character.valueOf('1'), ModItems.obsidianShard, Character.valueOf('2'), Item.stick});
@@ -89,7 +88,6 @@ public class registry
         LanguageRegistry.addName(ModItems.blackDiamondAxe, "Black Diamond Axe");
         LanguageRegistry.addName(ModItems.blackDiamondHoe, "Black Diamond Hoe");
         LanguageRegistry.addName(ModItems.blackDiamondShovel, "Black Diamond Shovel");
-        LanguageRegistry.addName(ModItems.obsidianArrow, "Obsidian Arrow");
         LanguageRegistry.addName(ModItems.obsidianBow, "Obsidian Bow");
         
         LanguageRegistry.addName(ModArmor.obsidianBoots, "Obsidian Boots");

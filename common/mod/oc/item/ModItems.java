@@ -38,7 +38,6 @@ public class ModItems
     public static Item blackDiamondHoe;
     public static Item blackDiamondShovel;
     public static ModItemBow obsidianBow;
-    public static Item obsidianArrow;
     
     public static EnumToolMaterial obsidianTool;
     public static EnumToolMaterial blackDiamondTool;
@@ -53,7 +52,7 @@ public class ModItems
         obsidianShard = new obsidianShard(ItemIDs.obsidianSharddefault).setUnlocalizedName("shardObsidian");
         obsidianPickaxe = new obsidianPickaxe(ItemIDs.obsidianPickaxedefault, obsidianTool).setUnlocalizedName("pickaxeObsidian");
         obsidianAxe = new obsidianAxe(ItemIDs.obsidianHatchetdefault, obsidianTool).setUnlocalizedName("hatchetObsidian");
-        obsidianHoe = new obsidianHoe(ItemIDs.obsidianHoedefault, obsidianTool).setUnlocalizedName("hatchetObsidian");
+        obsidianHoe = new obsidianHoe(ItemIDs.obsidianHoedefault, obsidianTool).setUnlocalizedName("hoeObsidian");
         obsidianShovel = new obsidianShovel(ItemIDs.obsidianShoveldefault, obsidianTool).setUnlocalizedName("shovelObsidian");
         blackDiamondSword = new obsidianSword(ItemIDs.blackDiamondSworddefault, blackDiamondTool).setUnlocalizedName("swordBlackDiamond");
         blackDiamondPickaxe = new obsidianPickaxe(ItemIDs.blackDiamondPickaxedefault, blackDiamondTool).setUnlocalizedName("pickaxeBlackDiamond");
@@ -64,7 +63,6 @@ public class ModItems
         blackDiamond = new blackDiamond(ItemIDs.blackDiamonddefault);
         obsidianIngot = new obsidianIngot(ItemIDs.obsidianIngotDefault);
         obsidianBow = (ModItemBow)(new ModItemBow(ItemIDs.obsidianBowDefault)).setUnlocalizedName("obsidianBow");
-        obsidianArrow = new ItemLMM(ItemIDs.obsidianArrowDefault).setCreativeTab(ObsidiCraft.tabsOC).setUnlocalizedName("obsidianTippedArrow");
         
         obsidianCutter.setContainerItem(obsidianCutter);
         
